@@ -1,0 +1,12 @@
+*.log
+ScaffoldingReadMe.txt
+tmp/
+bin/
+obj/
+.vscode/
+.idea/
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json
+*.sln
