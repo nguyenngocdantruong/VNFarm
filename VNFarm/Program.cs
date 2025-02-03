@@ -13,7 +13,7 @@ public class Program
 
         builder.Services.AddDbContextPool<EcommerceContext>(options =>
         {
-            options.UseSqlServer(builder.Configuration.GetConnectionString("EcommerceContext"));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
         });
 
         var app = builder.Build();
