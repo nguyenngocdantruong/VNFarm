@@ -13,9 +13,9 @@ namespace VNFarm.Infrastructure.Repositories
         public ProductRepository(VNFarmContext context) : base(context)
         {
         }
-        public async override Task<Product> Update(Product entity)
+        public async override Task<bool> Update(Product entity)
         {
-            var old = this.First(p => p.Id == entity.Id);
+            var old = await this.First(p => p.Id == entity.Id);
             if (old != null) 
             {
                 old.Name = entity.Name;
@@ -29,10 +29,10 @@ namespace VNFarm.Infrastructure.Repositories
                 old.ReviewCount = entity.ReviewCount;
                 old.IsActive = entity.IsActive;
                 old.UpdatedAt = DateTime.Now;
-                return Task.FromResult(old);
+                await Save();
+                return true;
             }
-            
-
+            return false;
         }
     }
 }
