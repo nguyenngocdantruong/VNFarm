@@ -35,6 +35,7 @@ public partial class EcommerceContext : DbContext
         modelBuilder.Entity<Category>(entity =>
         {
             entity.Property(e => e.Name).HasMaxLength(50);
+            entity.Property(e => e.ImageUrl).HasMaxLength(200);
         });
 
         modelBuilder.Entity<Product>(entity =>
