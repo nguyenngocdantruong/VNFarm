@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icon-dukamarket';
-  src:  url('http://127.0.0.1:5500/assets/fonts/icon-dukamarket.eot');
-  src:  url('http://127.0.0.1:5500/assets/fonts/icon-dukamarket.eot') format('embedded-opentype'),
-    url('http://127.0.0.1:5500/assets/fonts/icon-dukamarket.ttf') format('truetype'),
-    url('http://127.0.0.1:5500/assets/fonts/icon-dukamarket.woff') format('woff'),
-    url('http://127.0.0.1:5500/assets/fonts/icon-dukamarket.svg') format('svg');
+  src:  url('/assets/fonts/icon-dukamarket.eot');
+  src:  url('/assets/fonts/icon-dukamarket.eot') format('embedded-opentype'),
+    url('/assets/fonts/icon-dukamarket.ttf') format('truetype'),
+    url('/assets/fonts/icon-dukamarket.woff') format('woff'),
+    url('/assets/fonts/icon-dukamarket.svg') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
